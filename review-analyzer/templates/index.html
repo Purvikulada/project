@@ -1,0 +1,28 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Review Analyzer (Naive Bayes)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Review Sentiment Analyzer</h1>
+    <p>Type a product review and the model will predict whether it's positive or negative.</p>
+
+    <textarea id="reviewInput" placeholder="Write your review here..."></textarea>
+    <button id="analyzeBtn">Analyze</button>
+
+    <div id="result" class="hidden">
+      <h2>Result</h2>
+      <p><strong>Prediction:</strong> <span id="prediction"></span></p>
+      <div id="probs"></div>
+    </div>
+    <div class="footer">Built with Flask + scikit-learn (Naive Bayes)</div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
